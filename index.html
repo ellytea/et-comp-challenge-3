@@ -9,11 +9,11 @@
 <body>
   <div class="wrapper" role="styling">
     <aside class="side-nav">
-      <section class="user-image" aria-label="">
+      <section class="user-image" aria-label="user profile section">
         <img src="" alt="profile image">
         <h3>Elly Torres &or;</h3>
       </section>
-      <section class="main-nav">
+      <section class="side-section" aria-label="side nav section">
         <nav>
           <h4>Main</h4>
           <a href="#" class="side-nav-links">HOME</a>
@@ -23,7 +23,7 @@
           <a href="#" class="side-nav-links">CALENDAR</a>
         </nav>
       </section>
-      <section>
+      <section class="adim" aria-label="Administrative section">
         <nav>
           <h4>Admin</h4>
           <a href="#" class="side-nav-links">USERS</a>
@@ -33,7 +33,7 @@
           <a href="#" class="side-nav-links">SOCIAL</a>
         </nav>
       </section>
-      <section>
+      <section class="Catergories" aria-label="catergory section">
         <nav>
           <h4>Catergories</h4>
           <a href="#" class="side-nav-links">Administrative</a>
@@ -44,8 +44,8 @@
       </section>
     </aside>
     <div class="style-wrapper" role="styling">
-      <header class="header-nav">
-        <section class="search-bar-section" aria-label="header seach navigation">
+      <header>
+        <section class="search-bar-section" aria-label="search bar section">
           <div class="hamburger-section" role="hamburger bar container">
           <!-- left arrow icon -->
           <!-- hamburger bar -->
@@ -58,8 +58,8 @@
           <!-- icon -->
           <!-- icon -->
         </section>
-        <section class="job-title-section">
-          <h1>Customer Service Rep</h1>
+        <section class="job-title-section" aria-label="job title section">
+          <h1>Front-End Developer</h1>
           <div class="location-wrapper" role="location wrapper">
             <!-- location icon -->
             <p>Denver, CO</p>
@@ -67,14 +67,63 @@
           </div>
           <div class="title-nav-buttons" role="title section wrapper">
             <div class="title-buttons" role="wrapper for buttons">
-              <button class="open-btn"><!-- dot icon --></button>
+              <button class="open-btn"><!-- dot icon -->OPEN</button>
               <button class="bookmark-btn"><!-- bookmark icon --></button>
               <button class="edit-btn"><!-- pencil icon --></button>
               <button class="trash-btn"><!-- trash icon --></button>
             </div>
           </div>
         </section>
+        <section class="header-nav" aria-label="header navigation">
+          <nav>
+            <a href="#">SUMMARY</a>
+            <a href="#">APPLICANTS</a>
+            <a href="#">JOB BOARD</a>
+            <a href="#">INTERVIEWS</a>
+            <a href="#">ACTIVITY</a>
+            <a href="#">BROADCAST</a>
+            <a href="#">NOTIFICATIONS</a>
+          </nav>
+        </section>
       </header>
+      <main>
+        <section class="graphs" aria-label="graph section">
+          <div class="pies" role="pie chart container">
+            <div class="pie-flex" role="chart container for flex">
+              <div class="pie-1" role="single chart container">
+                <!-- SVG pie chart -->
+              </div>
+              <div class="pie-2" role="single chart container">
+                <!-- SVG pie chart -->
+              </div>
+              <div class="pie-3" role="single chart container">
+                <!-- SVG pie chart -->
+              </div>
+            </div>
+            <button class="totals-btn">Totals<!-- dot icon --> out of 5,031 views</button>
+          </div>
+          <div class="bar-graph-container" role="bar graph container">
+            <div class="bar-graph" role="bar graph">
+              <!-- bar graph -->
+            </div>
+            <button class="applicant-btn">APPLICANTS/DAY</button>
+          </div>
+        </section>
+        <div class="line break" role="line break container">
+          <hr>
+          <!-- up arrow icon -->
+          <hr>
+        </div>
+        <section class="job-section-wrapper" aria-label="job description and social wrapper">
+          <article class="job-description">
+            <div class="job-top-container" role="styling container">
+              <h3>JOB DESCRIPTION</h3>
+              <button class="edit-job-btn"><!-- pencil icon -->EDIT</button>
+            </div>
+          </article>
+        </section>
+
+      </main>
     </div>
   </div>
 </body>
