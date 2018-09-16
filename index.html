@@ -9,11 +9,11 @@
 <body>
   <div class="wrapper" role="styling">
     <aside class="side-nav">
-      <section class="user-image" aria-label="">
+      <section class="user-image" aria-label="user profile section">
         <img src="" alt="profile image">
         <h3>Elly Torres &or;</h3>
       </section>
-      <section class="main-nav">
+      <section class="side-section" aria-label="side nav section">
         <nav>
           <h4>Main</h4>
           <a href="#" class="side-nav-links">HOME</a>
@@ -23,7 +23,7 @@
           <a href="#" class="side-nav-links">CALENDAR</a>
         </nav>
       </section>
-      <section>
+      <section class="adim" aria-label="Administrative section">
         <nav>
           <h4>Admin</h4>
           <a href="#" class="side-nav-links">USERS</a>
@@ -33,7 +33,7 @@
           <a href="#" class="side-nav-links">SOCIAL</a>
         </nav>
       </section>
-      <section>
+      <section class="Catergories" aria-label="catergory section">
         <nav>
           <h4>Catergories</h4>
           <a href="#" class="side-nav-links">Administrative</a>
@@ -44,29 +44,125 @@
       </section>
     </aside>
     <div class="style-wrapper" role="styling">
-      <header class="header-nav">
-        <section class="search-bar-section" aria-label="header seach nav">
+      <header>
+        <section class="search-bar-section" aria-label="search bar section">
+          <div class="hamburger-section" role="hamburger bar container">
           <!-- left arrow icon -->
-          <!-- hamberbur bar -->
+          <!-- hamburger bar -->
+          </div>
           <form class="seach-bar-form" role="search">
             <!-- seach icon -->
-            <input id="search-bar" type="search">
+            <input id="search-bar" type="search" placeholder="Search for a job, task or resume">
           </form>
           <!-- profile icon -->
           <!-- icon -->
           <!-- icon -->
         </section>
-        <section class="job-title-section">
-          <h1>Customer Service Rep</h1>
-          <div class="location-wrapper">
+        <section class="job-title-section" aria-label="job title section">
+          <h1>Front-End Developer</h1>
+          <div class="location-wrapper" role="location wrapper">
             <!-- location icon -->
             <p>Denver, CO</p>
             <a href="#">Preview this post</a>
           </div>
-          <div class="title-nav" role="">
+          <div class="title-nav-buttons" role="title section wrapper">
+            <div class="title-buttons" role="wrapper for buttons">
+              <button class="open-btn"><!-- dot icon -->OPEN</button>
+              <button class="bookmark-btn"><!-- bookmark icon --></button>
+              <button class="edit-btn"><!-- pencil icon --></button>
+              <button class="trash-btn"><!-- trash icon --></button>
+            </div>
           </div>
         </section>
+        <section class="header-nav" aria-label="header navigation">
+          <nav>
+            <a href="#">SUMMARY</a>
+            <a href="#">APPLICANTS</a>
+            <a href="#">JOB BOARD</a>
+            <a href="#">INTERVIEWS</a>
+            <a href="#">ACTIVITY</a>
+            <a href="#">BROADCAST</a>
+            <a href="#">NOTIFICATIONS</a>
+          </nav>
+        </section>
       </header>
+      <main>
+        <section class="graphs" aria-label="graph section">
+          <div class="pies" role="pie chart container">
+            <div class="pie-flex" role="chart container for flex">
+              <div class="pie-1" role="single chart container">
+                <!-- SVG pie chart -->
+              </div>
+              <div class="pie-2" role="single chart container">
+                <!-- SVG pie chart -->
+              </div>
+              <div class="pie-3" role="single chart container">
+                <!-- SVG pie chart -->
+              </div>
+            </div>
+            <button class="totals-btn">Totals<!-- dot icon --> out of 5,031 views</button>
+          </div>
+          <div class="bar-graph-container" role="bar graph container">
+            <div class="bar-graph" role="bar graph">
+              <!-- bar graph -->
+            </div>
+            <button class="applicant-btn">APPLICANTS/DAY</button>
+          </div>
+        </section>
+        <div class="line break" role="line break container">
+          <hr>
+          <!-- up arrow icon -->
+          <hr>
+        </div>
+        <section class="job-section-wrapper" aria-label="job description and social wrapper">
+          <article class="job-description">
+            <div class="job-top-container" role="styling container">
+              <h3>JOB DESCRIPTION</h3>
+              <button class="edit-job-btn"><!-- pencil icon -->EDIT</button>
+            </div>
+            <div class="job-details" role="job details section">
+              <h4>POSITION TITLE</h4>
+              <p>Fron-end Developer</p>
+              <h4>LOCATION</h4>
+              <p>Denver, CO</p>
+              <h4>EMPLOYMENT TYPE</h4>
+              <p>Full-time</p>
+              <h4>EXPERIENCE</h4>
+              <p>Junior</p>
+              <h4>STATUS</h4>
+              <p>Open</p>
+              <h4>DESCRIPTION</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit ut aliquam purus sit amet luctus venenatis lectus magna. Ornare arcu odio ut sem nulla pharetra diam. Felis eget velit aliquet sagittis id consectetur purus ut.</p>
+              <h4>HIRING LEAD</h4>
+              <p><img src="" alt="hiring lead photo"/>Jane Doe</p>
+              <h4>APPROVED SALARY</h4>
+              <p>$58,000</p>
+            </div>
+          </article>
+        </section>
+        <aside class="social-links">
+          <button><!-- icon -->Facebook</button>
+          <button><!-- icon -->Tweet this Job</button>
+          <button><!-- icon -->Post to Linkedin</button>
+          <h3><!-- earth icon -->Link to this Job</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <form>
+            <input type="text" placeholder="https://loremipsum.dol/sitamet.com">
+            <button class="copy-btn">Copy</button>
+          </form>
+          <h3><!-- icon -->Use the Button Widget</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <form>
+            <input type="text" placeholder="<script>javascript_src=share-job</script>">
+            <button class="copy-btn">Copy</button>
+          </form>
+          <h3><!-- icon -->Upload Resumes by Email</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <form>
+            <input type="text" placeholder="janedoe@gmail.com">
+          </form>
+        </aside>
+      </main>
     </div>
   </div>
 </body>
