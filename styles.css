@@ -2,6 +2,7 @@
   box-sizing: border-box;
   font-family: 'Trebuchet MS', 'Open Sans', sans-serif;
   font-size: 15px;
+  font-weight: 100;
 }
 
 body {
@@ -12,22 +13,78 @@ body {
 
 .outer-wrapper {
   display: grid;
-  grid-template-columns: repeat(7, 1fr)
+  grid-template-columns: repeat(8, 1fr)
 }
 
 .style-wrapper {
-  grid-column: 2 /span 6;
+  grid-column: 2 /span 7;
 }
 
-.side-nav-links {
+/************ side navigation */
+
+.side-nav {
+  position: sticky;
+  width: 180px;
+  background: #354051;
+  color: #a0acbf;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-image {
+  text-align: center;
+  padding: 30px 10px 15px 10px;
+}
+
+.profile-image {
+  width: 55%;
+  border-radius: 50px;
+}
+
+.user-image, .side-section,
+ .admin {
+  border-bottom: 3px inset #2e3848;
+}
+
+/*.left-nav {
+  margin-left: 20px;
+}*/
+
+.side-nav-links, 
+.catergory-link {
   display: block;
+  color: #a0acbf;
+  text-decoration: none;
+}
+
+.catergory-link:hover {
+  color: #fff;
+}
+
+.side-nav-links:hover {
+  color: #fff;
+  background: #303a49;
+  border-left: 2px solid #13a4fa;
+}
+
+.yellow {
+  color: #ffd505;
+}
+
+.blue {
+  color: #2baffe;
+}
+
+.red {
+  color: #e91a61;
+}
+
+.green {
+  color: #00aa8a;
 }
 
 /*********** Temporary styles for layout */
 
-.side-nav {
-  background: #354051;
-}
 
 header {
   background: pink;
