@@ -46,22 +46,17 @@ body {
   border-bottom: 3px inset #2e3848;
 }
 
-/*.left-nav {
-  margin-left: 20px;
-}*/
-
-.side-nav-links, 
-.catergory-link {
-  display: block;
+.side-nav-links a, 
+.catergory-link a{
   color: #a0acbf;
   text-decoration: none;
 }
 
-.catergory-link:hover {
+.catergory-link a:hover {
   color: #fff;
 }
 
-.side-nav-links:hover {
+.side-nav-links a:hover {
   color: #fff;
   background: #303a49;
   border-left: 2px solid #13a4fa;
