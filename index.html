@@ -4,42 +4,44 @@
   <title>Static-3</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <div class="outer-wrapper" role="styling wrapper">
     <aside class="side-nav">
       <section class="user-image" aria-label="user profile section">
-        <img class="profile-image" src="" alt="profile image">
-        <h3>Elly Torres &or;</h3>
+        <img class="profile-image" src="imgs/jeff.jpg" alt="profile image">
+        <h3>Jeff Bridges <i class="fas fa-angle-down"></i></h3>
       </section>
       <section class="side-section" aria-label="side nav section">
-        <nav>
+        <nav class="left-nav">
           <h4>Main</h4>
-          <a href="#" class="side-nav-links">HOME</a>
-          <a href="#" class="side-nav-links">JOBS</a>
-          <a href="#" class="side-nav-links">RESUMES</a>
-          <a href="#" class="side-nav-links">TASKS</a>
-          <a href="#" class="side-nav-links">CALENDAR</a>
+          <!-- wrap in divs for alignment purposes -->
+          <a href="#" class="side-nav-links"><i class="fas fa-home"></i> HOME</a>
+          <a href="#" class="side-nav-links"><i class="fas fa-briefcase"></i> JOBS</a>
+          <a href="#" class="side-nav-links"><i class="fas fa-file-alt"></i> RESUMES</a>
+          <a href="#" class="side-nav-links"><i class="fas fa-clipboard"></i> TASKS</a>
+          <a href="#" class="side-nav-links"><i class="fas fa-calendar-alt"></i> CALENDAR</a>
         </nav>
       </section>
-      <section class="adim" aria-label="Administrative section">
-        <nav>
+      <section class="admin" aria-label="Administrative section">
+        <nav class="left-nav">
           <h4>Admin</h4>
-          <a href="#" class="side-nav-links">USERS</a>
-          <a href="#" class="side-nav-links">LOCATIONS</a>
-          <a href="#" class="side-nav-links">WORKFLOWS</a>
-          <a href="#" class="side-nav-links">JOB BOARDS</a>
-          <a href="#" class="side-nav-links">SOCIAL</a>
+          <a href="#" class="side-nav-links"><i class="fas fa-user-friends"></i> USERS</a>
+          <a href="#" class="side-nav-links"><i class="fas fa-map-marker-alt"></i> LOCATIONS</a>
+          <a href="#" class="side-nav-links"><i class="fas fa-bezier-curve"></i> WORKFLOWS</a>
+          <a href="#" class="side-nav-links"><i class="fas fa-newspaper"></i> JOB BOARDS</a>
+          <a href="#" class="side-nav-links"><i class="fas fa-vector-square"></i> SOCIAL</a>
         </nav>
       </section>
       <section class="Catergories" aria-label="catergory section">
-        <nav>
+        <nav class="left-nav">
           <h4>Catergories</h4>
-          <a href="#" class="side-nav-links">Administrative</a>
-          <a href="#" class="side-nav-links">Design</a>
-          <a href="#" class="side-nav-links">Executive</a>
-          <a href="#" class="side-nav-links">Human Recources</a>
+          <a href="#" class="catergory-link"><i class="yellow fas fa-check-square"></i> Administrative</a>
+          <a href="#" class="catergory-link"><i class="blue fas fa-square"></i> Design</a>
+          <a href="#" class="catergory-link"><i class="red fas fa-square"></i> Executive</a>
+          <a href="#" class="catergory-link"><i class="green fas fa-square"></i> Human Recources</a>
         </nav>
       </section>
     </aside>
@@ -61,8 +63,7 @@
         <section class="job-title-section" aria-label="job title section">
           <h1>Front-End Developer</h1>
           <div class="location-wrapper" role="location wrapper">
-            <!-- location icon -->
-            <p>Denver, CO</p>
+            <p><i class="fas fa-map-marker-alt"></i> Denver, CO</p>
             <a href="#">Preview this post</a>
           </div>
           <div class="title-nav-buttons" role="title section wrapper">
@@ -140,10 +141,10 @@
             </div>
           </article>
         <aside class="social-links">
-          <button><!-- icon -->Facebook</button>
+          <button><i class="fab fa-facebook-f"></i> Facebook</button>
           <button><!-- icon -->Tweet this Job</button>
-          <button><!-- icon -->Post to Linkedin</button>
-          <h3><!-- earth icon -->Link to this Job</h3>
+          <button><i class="fab fa-linkedin"></i> Post to Linkedin</button>
+          <h3><i class="fas fa-globe-americas"></i> Link to this Job</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <form>
             <input type="text" placeholder="https://loremipsum.dol/sitamet.com">
