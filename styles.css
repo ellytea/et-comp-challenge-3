@@ -1,12 +1,7 @@
 * {
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Open Sans', sans-serif;
-  font-size: 15px;
-  font-weight: 100;
-}
-
-body {
-  margin: 0;
+  font-family: 'Monserrat', 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 /*********** Layout styles */
@@ -20,7 +15,11 @@ body {
   grid-column: 2 /span 7;
 }
 
-/************ side navigation */
+main {
+  background: #ecf2f6;
+}
+
+/************ Side navigation */
 
 .side-nav {
   position: sticky;
@@ -29,6 +28,7 @@ body {
   color: #a0acbf;
   display: flex;
   flex-direction: column;
+  font-size: .8em;
 }
 
 .user-image {
@@ -44,22 +44,39 @@ body {
 .user-image, .side-section,
  .admin {
   border-bottom: 3px inset #2e3848;
+  padding-bottom: 15px;
+}
+
+.left-nav h4 {
+  margin: 20px 0 10px 20px;
+  color: #607088;
+}
+
+.side-nav-links,
+.catergory-link {
+  padding: 10px;
+}
+
+.side-nav-links i, 
+.catergory-link i {
+  margin-right: 10px;
 }
 
 .side-nav-links a, 
-.catergory-link a{
+.catergory-link a {
   color: #a0acbf;
   text-decoration: none;
+  padding-left: 10px;
 }
 
 .catergory-link a:hover {
   color: #fff;
 }
 
-.side-nav-links a:hover {
+.side-nav-links:hover {
   color: #fff;
   background: #303a49;
-  border-left: 2px solid #13a4fa;
+  border-left: 2.5px solid #13a4fa;
 }
 
 .yellow {
