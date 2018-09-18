@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Monserrat', 'Open Sans', sans-serif;
+  font-family: 'Monserrat', sans-serif;
   font-weight: 400;
 }
 
@@ -17,6 +17,10 @@
 
 main {
   background: #ecf2f6;
+}
+
+hr {
+  border: 1px solid #d9e0e7;
 }
 
 /************ Side navigation */
@@ -55,11 +59,13 @@ main {
 .side-nav-links,
 .catergory-link {
   padding: 10px;
+  border-left: 2.5px solid #354051;
 }
 
 .side-nav-links i, 
 .catergory-link i {
   margin-right: 10px;
+  width: 13px;
 }
 
 .side-nav-links a, 
@@ -98,10 +104,6 @@ main {
 /*********** Temporary styles for layout */
 
 
-header {
-  background: pink;
-}
-
 .graphs {
   background: purple;
 }
@@ -113,3 +115,69 @@ header {
 .social-links {
   background: green;
 }
+
+/************ Header/Seach Section */
+
+header {
+  grid-column: 2 / span 7;
+  border-bottom: 2px solid #dee4e9;
+  background: #fff;
+  height: 270px;
+}
+
+.search-bar-section {
+  border-bottom: 2px solid #dee4e9;
+  color: #9ba3af;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-section {
+  border-right: 2px solid #dee4e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 80px;
+}
+
+.fa-bars {
+  font-size: 1.35em;
+  color: #7b8594;
+}
+
+.fa-caret-left {
+  margin-right: 3px;
+  color: #13a4fa;
+}
+
+#search-bar {
+  border: none;
+  height: 70px;
+}
+
+.seach-bar-form i {
+  font-size: 1.3em;
+  margin-left: 20px;
+}
+
+#search-bar {
+  margin-left: 10px;
+  width: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
