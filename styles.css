@@ -8,7 +8,7 @@
 
 .outer-wrapper {
   display: grid;
-  grid-template-columns: repeat(8, 1fr)
+  grid-template-columns: repeat(8, 1fr);
 }
 
 .style-wrapper {
@@ -101,22 +101,7 @@ hr {
   color: #00aa8a;
 }
 
-/*********** Temporary styles for layout */
-
-
-.graphs {
-  background: purple;
-}
-
-.job-description {
-  background: blue;
-}
-
-.social-links {
-  background: green;
-}
-
-/************ Header/Seach Section */
+/************ Top Search Section */
 
 header {
   grid-column: 2 / span 7;
@@ -134,6 +119,13 @@ header {
 
 .hamburger-section {
   border-right: 2px solid #dee4e9;
+}
+
+.top-nav {
+  border-left: 2px solid #dee4e9;
+}
+
+.hamburger-section, .top-nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,6 +146,12 @@ header {
 #search-bar {
   border: none;
   height: 70px;
+  margin-left: 10px;
+  width: 90%;
+}
+
+.seach-bar-form {
+  width: 80%;
 }
 
 .seach-bar-form i {
@@ -161,23 +159,237 @@ header {
   margin-left: 20px;
 }
 
-#search-bar {
-  margin-left: 10px;
-  width: 400px;
+/********** Job title section */
+
+.job-title-section {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }
 
+.location-wrapper {
+  grid-column: 1 / span 4;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+  height: 158px;
+}
 
+.title-buttons {
+  grid-column: 5 / span 2;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding-left: 80px;
+  width: 90%;
+}
 
+.open-btn {
+  font-size: .8em;
+  padding: 5px;
+}
 
+.title-buttons i {
+  font-size: 15px;
+}
 
+.title-buttons button {
+  margin: 5px;
+  padding: 8px;
+  border-radius: 50px;
+}
 
+.header-nav {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  height: 40px;
+}
 
+.nav-content {
+  grid-column: 1 / span 6;
+  margin: auto;
+  width: 93%;
+}
 
+.nav-content a {
+  font-size: .9em;
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+  margin-right: 40px;
+}
 
+ /* circle icon*/
 
+.tiny {
+  font-size: 3.5px;
+  color: #000;
+}
 
+/********** graphs */
 
+.pie-flex {
+  display: flex;
+  flex: row;
+}
 
+.pie-1, .pie-2, .pie-3 {
+  width: 15%;
+}
 
+.circle-bg {
+  fill: none;
+  stroke: #d9e4eb;
+  stroke-width: 2;
+}
 
+.circle {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  animation: progress 2s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0, 100;
+  }
+}
+
+.circular-chart.green .circle {
+  stroke: #47bac1;
+}
+
+.circular-chart.blue .circle {
+  stroke: #13a4fa;
+}
+
+.circular-chart.purple .circle {
+  stroke: #ae69af;
+}
+
+.applicant, .interview,
+.forward {
+  fill: #666;
+  font-size: 0.2em;
+  text-anchor: middle;
+}
+
+.number {
+  fill: #666;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+/*********** line break */
+
+.line-break {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-break hr {
+  width: 45%;
+}
+
+/************ job description */
+
+.job-section-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 95%;
+  margin: auto;
+}
+
+.job-description {
+  grid-column: 1 / span 3;
+  width: 95%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.social-links {
+  grid-column: 4 / span 2;
+  width: 95%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60%;
+}
+
+.job-top-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #5f708e;
+  align-items: center;
+  color: #fff;
+  padding: 15px;
+}
+
+.job-top-container h3 {
+  font-size: .9em;
+  margin: 15px;
+}
+
+.edit-job-btn {
+  font-size: .8em;
+  background: #7c8ba6;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 3px;
+  width: 50%;
+}
+
+.job-details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: #5f708e;
+  background: #fff;
+  font-size: .9em;
+}
+
+.job-details h4 {
+  grid-column: 1;
+  padding: 15px;
+  margin: 15px;
+}
+
+.job-details p {
+  grid-column: 2 / span 3;
+  padding: 15px;
+  margin: 15px;
+}
+
+.job-details hr {
+  grid-column: 1 / span 4;
+  width: 90%;
+  border: 1px solid #eff3f6;
+}
+
+/************* Social LInks */
+
+.social-btn {
+  display: block;
+  width: 95%;
+  height: 50px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+#face {
+  color: #fff;
+  background: #4a6fc2;
+}
+
+#tweet {
+  background: #01abef;
+  color: #fff;
+}
+
+#linked {
+  background: #0681bd;
+  color: #fff;
+}
 
