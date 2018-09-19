@@ -397,6 +397,7 @@ header {
   grid-column: 2 / span 3;
   padding: 15px;
   margin: 15px;
+  font-size: 1.2em;
 }
 
 .job-details hr {
@@ -429,4 +430,19 @@ header {
   background: #0681bd;
   color: #fff;
 }
+
+.social-links input {
+  padding: 5px;
+  height: 50px;
+  width: 70%;
+}
+
+.copy-btn {
+  margin-left: -5px;
+  background: #47bac1;
+  height: 50px;
+  border-top: 2px solid #47bac1;
+}
+
+
 
