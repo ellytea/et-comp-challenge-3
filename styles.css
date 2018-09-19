@@ -125,6 +125,11 @@ header {
   border-left: 2px solid #dee4e9;
 }
 
+.top-nav:hover {
+  background: #13a4fa;
+  color: #fff;
+}
+
 .hamburger-section, .top-nav {
   display: flex;
   justify-content: center;
@@ -173,30 +178,50 @@ header {
   margin: auto;
   padding-top: 20px;
   height: 158px;
+  color: #525562;
+}
+
+.location-wrapper a {
+  text-decoration: none;
+  color: #13a4fa;
 }
 
 .title-buttons {
+  background: #fff;
   grid-column: 5 / span 2;
   display: flex;
   align-items: center;
   margin: auto;
-  padding-left: 80px;
+  padding-left: 40px;
   width: 90%;
 }
 
 .open-btn {
   font-size: .8em;
-  padding: 5px;
-}
-
-.title-buttons i {
-  font-size: 15px;
-}
-
-.title-buttons button {
-  margin: 5px;
-  padding: 8px;
+  padding: 10px;
   border-radius: 50px;
+  border: 2px solid #9ba3af;
+  margin-right: 5px;
+  width: 100px;
+}
+
+.open-btn i {
+  color: #8cc63e;
+} 
+
+.bookmark-btn, .edit-btn,
+.trash-btn {
+  margin: auto 10px;
+  padding: 10px;
+  border-radius: 50px;
+  border: 2px solid #9ba3af;
+  width: 50px;
+}
+
+.bookmark-btn i, .edit-btn i,
+.trash-btn i {
+  color: #9ba3af;
+
 }
 
 .header-nav {
@@ -206,23 +231,24 @@ header {
 }
 
 .nav-content {
-  grid-column: 1 / span 6;
+  grid-column: 1 / span 7;
   margin: auto;
-  width: 93%;
+  padding-top: 5px;
+  width: 95%;
 }
 
 .nav-content a {
+  color: #909baa;
   font-size: .9em;
   text-decoration: none;
   border-bottom: 2px solid #fff;
   margin-right: 40px;
+  padding-bottom: 5px;
 }
 
- /* circle icon*/
-
-.tiny {
-  font-size: 3.5px;
-  color: #000;
+.nav-content a:hover {
+  color: #505360;
+  border-bottom: 2px solid #13a4fa;
 }
 
 /********** graphs */
@@ -242,6 +268,16 @@ header {
  .applicant-btn {
   grid-column: 3 / span 2;
   margin: 10px auto;
+}
+
+.totals-btn, .applicant-btn {
+  background: #fff;
+  border: 2px solid #9ba3af;
+  border-radius: 50px;
+  color: #657183;
+  font-size: .9em;
+  padding: 10px;
+  width: 250px;
 }
 
 .bar-graph-container {
@@ -329,6 +365,15 @@ header {
   width: 47%;
 }
 
+.fa-angle-up {
+  border: 2px solid #d9e0e7;
+  background: #fff;
+  border-radius: 50px;
+  color: #a5acb7;
+  padding: 5px 8px;
+  width: 30px;
+}
+
 /************ job description */
 
 .job-section-wrapper {
@@ -387,14 +432,24 @@ header {
   font-size: .9em;
 }
 
+.job-details img {
+  border-radius: 50px;
+  width: 15%;
+  margin-right: 20px;
+}
+
 .job-details h4 {
   grid-column: 1;
+  display: flex;
+  align-items: center;
   padding: 15px;
   margin: 15px;
 }
 
 .job-details p {
   grid-column: 2 / span 3;
+  display: flex;
+  align-items: center;
   padding: 15px;
   margin: 15px;
   font-size: 1.2em;
@@ -411,9 +466,9 @@ header {
 .social-btn {
   display: block;
   width: 100%;
-  height: 50px;
+  height: 60px;
   padding: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #face {
@@ -435,7 +490,20 @@ header {
   padding: 5px;
   height: 50px;
   width: 70%;
+  margin-bottom: 50px;
 }
+
+.social-links h3 {
+  margin-top: 50px;
+}
+
+.social-links p {
+  line-height: 1.5;
+}
+
+.social-links h3, p, input {
+  color: #6f7a8a;
+} 
 
 .copy-btn {
   margin-left: -5px;
@@ -443,6 +511,66 @@ header {
   height: 50px;
   border-top: 2px solid #47bac1;
 }
+
+.link-form {
+  border-bottom: 2px solid #d9e0e7;
+}
+
+/********** media queries */
+
+@media screen and (max-width: 1156px) {
+
+  .nav-content {
+  width: 90%;
+  }
+
+  .nav-content a {
+    margin-right: 20px;
+  }
+
+  .social-links {
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+
+  .nav-content {
+  width: 90%;
+  grid-column: 1 / span 6;
+  }
+
+  .nav-content a {
+    margin-right: 10px;
+  }
+
+  .title-buttons {
+  margin: auto;
+  padding-left: 0px;
+  width: 80%;
+  }
+}
+
+@media screen and (max-width: 1003px) {
+
+  .nav-content {
+    width: 98%;
+    padding: 0;
+    margin: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
