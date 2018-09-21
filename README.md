@@ -32,5 +32,6 @@
 
 ### Origional Comp
 
-![alt text](et-comp-challenge-3/imgs/better-quality-SC3.png)
+![better-quality-sc3](https://user-images.githubusercontent.com/41202313/45881996-0aca1900-bd6a-11e8-8c91-d031c665e1ab.png)
+
 
