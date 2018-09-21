@@ -29,3 +29,8 @@
 * Include a README with the repo that provides a brief overview of the project, and images of both the original comp and your version.
 
 * Push your final work to github pages
+
+### Origional Comp
+
+![alt text](et-comp-challenge-3/imgs/better-quality-SC3.png)
+
