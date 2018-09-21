@@ -34,4 +34,6 @@
 
 ![better-quality-sc3](https://user-images.githubusercontent.com/41202313/45881996-0aca1900-bd6a-11e8-8c91-d031c665e1ab.png)
 
+### My Version
 
+<img width="1161" alt="screen shot 2018-09-21 at 6 52 07 am" src="https://user-images.githubusercontent.com/41202313/45882384-38fc2880-bd6b-11e8-9696-930cff01da9f.png">
